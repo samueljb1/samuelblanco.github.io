@@ -11202,3 +11202,33 @@ body {
   padding: 5rem 0;
 }
 
+/* New style */
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.projects-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
