@@ -15,22 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
 
 </head>
-    <!-- slides -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.cert-swiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: { delay: 2500 },
-    breakpoints: {
-      768: { slidesPerView: 4 },
-      1024: { slidesPerView: 5 },
-    },
-  });
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
-
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -177,18 +161,41 @@
     <!-- Más proyectos -->
   </div>
 </section>
-
     
-       <!-- certifications -->
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="swiper cert-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/img/2021-03_Badge_SF-Certified_Administrator_500x490px.png" alt="Salesforce Administrator" /></div>
-      <div class="swiper-slide"><img src="assets/img/2021-06_Badge_SF-Certified_Business-Analyst_High-Res.png" alt="Salesforce BA" /></div>     
+<!-- Certifications -->
+<section id="certifications" class="bg-light py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="text-center mb-5">
+      <h2 class="text-black">Certifications</h2>
+      <p class="text-muted">Verified credentials and professional certifications</p>
+    </div>
+    <div class="swiper cert-swiper">
+      <div class="swiper-wrapper text-center">
+        <!-- Certification 1 -->
+        <div class="swiper-slide">
+          <img src="assets/img/2021-03_Badge_SF-Certified_Administrator_500x490px.png" class="img-fluid" style="max-height: 150px;" alt="Salesforce Administrator">
+        </div>
+        <!-- Certification 2 -->
+        <div class="swiper-slide">
+          <img src="assets/img/2021-06_Badge_SF-Certified_Business-Analyst_High-Res.png" class="img-fluid" style="max-height: 150px;" alt="Salesforce Business Analyst">
+        </div>
+        <!-- Certification 3 -->
+        <div class="swiper-slide">
+          <img src="assets/img/azure-fundamentals.png" class="img-fluid" style="max-height: 150px;" alt="Azure Fundamentals">
+        </div>
+        <!-- Certification 4 -->
+        <div class="swiper-slide">
+          <img src="assets/img/aws-cloud-practitioner.png" class="img-fluid" style="max-height: 150px;" alt="AWS Cloud Practitioner">
+        </div>
+        <!-- Certification 5 -->
+        <div class="swiper-slide">
+          <img src="assets/img/terraform-cert.png" class="img-fluid" style="max-height: 150px;" alt="Terraform Associate">
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
     <!-- Contact -->
     <section class="contact-section bg-black" id="signup">
@@ -244,6 +251,22 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+
+        <!-- slides -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.cert-swiper', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: { delay: 2500 },
+      breakpoints: {
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 }
+      }
+    });
+  });
+</script>
 </body>
 </html>
 
