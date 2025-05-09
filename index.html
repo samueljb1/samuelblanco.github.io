@@ -11,7 +11,35 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+    <!-- slides -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.cert-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: { delay: 2500 },
+    breakpoints: {
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 },
+    },
+  });
+</script>
+    <!-- certifications -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="swiper cert-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/img/2021-03_Badge_SF-Certified_Administrator_500x490px.png" alt="Salesforce Administrator" /></div>
+      <div class="swiper-slide"><img src="assets/img/2021-06_Badge_SF-Certified_Business-Analyst_High-Res.png" alt="Salesforce BA" /></div>
+      <div class="swiper-slide"><img src="ruta/devops.png" alt="DevOps" /></div>
+      
+    </div>
+  </div>
+</section>
+
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
