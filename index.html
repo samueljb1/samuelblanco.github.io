@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+
 </head>
     <!-- slides -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -27,6 +29,8 @@
     },
   });
 </script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
 <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -154,15 +158,34 @@
         </div>
     </div>
 </section>
+<section id="projects">
+  <h2>Highlighted Projects</h2>
+  <div class="project-grid">
+    <div class="project-card" data-aos="fade-up">
+      <h3>DRP with Azure + Veeam</h3>
+      <p>Hybrid Disaster Recovery implementation using Azure Site Recovery and Veeam Cloud Connect.</p>
+      <a href="img/project1-1.png" data-lightbox="drp" data-title="Dashboard DRP"><img src="img/thumb1.png" alt="Preview"></a>
+      <a href="img/project1-2.png" data-lightbox="drp" data-title="Failover Simulation"></a>
+    </div>
 
+    <div class="project-card" data-aos="fade-up">
+      <h3>Monitoring with Prometheus & Grafana</h3>
+      <p>Full-stack metrics monitoring of financial apps across hybrid infrastructure.</p>
+      <a href="img/project2-1.png" data-lightbox="monitoring" data-title="Grafana Dashboard"><img src="img/thumb2.png" alt="Preview"></a>
+      <a href="img/project2-2.png" data-lightbox="monitoring" data-title="Prometheus Alertmanager"></a>
+    </div>
+    <!-- Más proyectos -->
+  </div>
+</section>
+
+    
        <!-- certifications -->
 <section id="certifications">
   <h2>Certifications</h2>
   <div class="swiper cert-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="assets/img/2021-03_Badge_SF-Certified_Administrator_500x490px.png" alt="Salesforce Administrator" /></div>
-      <div class="swiper-slide"><img src="assets/img/2021-06_Badge_SF-Certified_Business-Analyst_High-Res.png" alt="Salesforce BA" /></div>
-      <div class="swiper-slide"><img src="ruta/devops.png" alt="DevOps" /></div>      
+      <div class="swiper-slide"><img src="assets/img/2021-06_Badge_SF-Certified_Business-Analyst_High-Res.png" alt="Salesforce BA" /></div>     
     </div>
   </div>
 </section>
