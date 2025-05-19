@@ -56,7 +56,7 @@ jobs:
         run: docker build -t samueljb1/devops-python-app .
 
       - name: Log in to DockerHub
-        run: echo "${{ devsutest }}" | docker login -u samueljb1 --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u samueljb1 --password-stdin
 
       - name: Push image to DockerHub
         run: docker push samueljb1/devops-python-app
